@@ -36,26 +36,31 @@ body {
     gap: 10px; /* Espaçamento entre as caixas */
 }
 .logo{
-    width: 100px;
+    width: 50px;
+}
+.textoLogo{
+    font-size: 8px;
 }
 .PedidosConta{
-    padding: 20px;
-    color: #333;
-    position: absolute; /* Altera para absolute */
-    top: 15px; /* Distância do topo da .header */
-    right: 15px; /* Distância da direita da .header */
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
     color: #333;
 }
 .grid-containerP {
     display: grid; /* Ativa o Grid */
     grid-template-columns: repeat(2, 100px);
-    gap: 30px; /* Espaçamento entre as caixas */
+    gap: 1px; /* Espaçamento entre as caixas */
 }
 .caixaP {
     display: flex;
     border: 1px solid #ccc;
     padding: 5px;
-    margin: 1px ;
+    margin: 2px ;
     background-color: #f9f9f9;
     width: 70px;
     height:10px ;
@@ -65,3 +70,50 @@ body {
 
     
 }
+.caixaNova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 172px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.carrinho{
+    font-size: 15px;
+    position: absolute;
+    top: 30px; 
+    right: 15px; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+ .sequenciaCaixas { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+ .caixaSequencia { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    flex-grow: 1;
+    font-size: medium;
+ }
