@@ -6,9 +6,9 @@ body {
 }
 .header {
     background-color: #4CAF50;
-    color: white;
-
+    color: rgb(255, 255, 255);
     padding: 15px;
+    
 }
 .main-content {
     padding: 20px;
@@ -34,4 +34,13 @@ body {
     display: grid; /* Ativa o Grid */
     grid-template-columns: repeat(3, 200px);
     gap: 10px; /* Espaçamento entre as caixas */
+}
+.logo{
+    width: 100px;
+}
+.PedidosConta{
+    padding: 20px;
+    color: #333;
+    display: flex;
+    
 }
