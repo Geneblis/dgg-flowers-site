@@ -7,7 +7,7 @@ body {
 .header {
     background-color: #4CAF50;
     color: white;
-    text-align: center;
+
     padding: 15px;
 }
 .main-content {
@@ -27,6 +27,11 @@ body {
     padding: 10px;
     margin: 10px 0;
     background-color: #f9f9f9;
-    width: 500px;
-    height:500px ;
+    width: 100px;
+    height:100px ;
+}
+.grid-container {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px; /* Espaçamento entre as caixas */
 }
