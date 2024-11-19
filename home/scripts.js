@@ -1,1 +1,5 @@
-console.log("Ola!");
+function scripts(){
+    return(
+        <button onClick={}>flores secas</button>
+    )
+}
