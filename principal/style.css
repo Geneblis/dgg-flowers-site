@@ -95,3 +95,79 @@ body {
     color: #333;
 }
 /* essa merda aqui de cima é o cabeçalho q eu demorei horas so PQ N SABIA USAR A PORRA DA DIV
+agora é a parte do story da pagina*/
+
+.story{
+    position: relative;
+    height: 100px;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.3);
+    background-color: #535353;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    scroll-snap-align: center;
+}
+
+.bolas{
+    height: 90px;
+    width: 90px;
+    background-color: #000000;
+    border-radius: 90px;
+    margin: 5px;
+    margin-left: 15px;    
+}
+.button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.button--antes{
+    left: 10px;
+}
+
+.button--prox{
+    right: 10px;
+}
+
+.bolas-ordenadas {
+    display: flex;
+    gap: 10px; 
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+/* agora o main*/
+
+.main-content {
+    background-color: #b4a8cb;
+    padding: 20px;
+    justify-items: center;
+    
+    
+
+}
+
+
+/* agora o footer*/
+footer{
+    background-color: #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 1; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color:#f9f9f9;
+}
+
+
