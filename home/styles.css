@@ -157,3 +157,11 @@ footer{
    left: 104px;
    font-size: 13px;
  }
+ button {
+    opacity: 0; /* O botão será invisível, mas ainda ocupará espaço e será clicável */
+    margin: 0; /* Remove margens, se houver */
+    position: absolute;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+}
