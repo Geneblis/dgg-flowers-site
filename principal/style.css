@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 7px;
+}
+.header {
+    background-color: #038C8C;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.logo{
+    width: 50px;
+}
+.textoLogo{
+    font-size: 8px;
+}
+.PedidosConta{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+.grid-containerP {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+}
+.caixaP {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px ;
+    background-color: #f9f9f9;
+    width: 70px;
+    height:10px ;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+
+    
+}
+.sequenciaCaixas { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+ .caixaSequencia { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    flex-grow: 1;
+    font-size: medium;
+ }
+ .caixaNova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 172px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.carrinho{
+    font-size: 15px;
+    position: absolute;
+    top: 30px; 
+    right: 15px; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+/* essa merda aqui de cima é o cabeçalho q eu demorei horas so PQ N SABIA USAR A PORRA DA DIV
