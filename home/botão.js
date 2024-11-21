@@ -1,9 +1,9 @@
-document.getElementById('fds').addEventListener('click', function() {
+document.getElementById('frescas').addEventListener('click', function() {
     window.location.href = '../principal/idex.html'; 
 });
-document.getElementById('fds3').addEventListener('click', function() {
-    window.location.href = '../principal/idex.html'; 
+document.getElementById('secas').addEventListener('click', function() {
+    window.location.href = '../home/floreSecas.html'; 
 });
-document.getElementById('fds4').addEventListener('click', function() {
+document.getElementById('vasos').addEventListener('click', function() {
     window.location.href = '../principal/idex.html'; 
 });
