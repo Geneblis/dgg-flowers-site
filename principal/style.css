@@ -164,6 +164,54 @@ agora é a parte do story da pagina*/
     
 
 }
+.caixa {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 200px;
+    height:200px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px; 
+    place-items: center;
+    
+}
+.caixaDestaque {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 200px;
+    height:50px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.fotoDestaque {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 400px;
+    height:150px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.textosDasCaixas{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+}
 
 
 /* agora o footer*/
@@ -173,7 +221,7 @@ footer{
     padding: 10; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
+    margin-bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
     color:#f9f9f9;
 }
@@ -182,5 +230,7 @@ footer{
 .vermelho{
     background-color: red;
 }
+
+
 
 
