@@ -104,10 +104,12 @@ agora é a parte do story da pagina*/
     background-color: #535353;
     display: flex;
     justify-content: center;
+    
 }
 
 .item{
     scroll-snap-align: center;
+    
 }
 
 .bolas{
@@ -116,7 +118,8 @@ agora é a parte do story da pagina*/
     background-color: #000000;
     border-radius: 90px;
     margin: 5px;
-    margin-left: 15px;    
+    margin-left: 15px; 
+       
 }
 .button{
     position: absolute;
@@ -127,10 +130,13 @@ agora é a parte do story da pagina*/
     cursor: pointer;
     padding: 10px;
     z-index: 1;
+    
 }
 
 .button--antes{
     left: 10px;
+    
+    
 }
 
 .button--prox{
@@ -143,6 +149,7 @@ agora é a parte do story da pagina*/
     flex-direction: row;
     align-items: center;
     overflow: hidden;
+    transition: transform 0.5s ease;
     
 }
 
@@ -157,6 +164,54 @@ agora é a parte do story da pagina*/
     
 
 }
+.caixa {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 200px;
+    height:200px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px; 
+    place-items: center;
+    
+}
+.caixaDestaque {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 200px;
+    height:50px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.fotoDestaque {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a8cbc5;
+    width: 400px;
+    height:150px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.textosDasCaixas{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+}
 
 
 /* agora o footer*/
@@ -166,7 +221,7 @@ footer{
     padding: 10; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
-    bottom: 1; /* Alinha ao fundo da página */
+    margin-bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
     color:#f9f9f9;
 }
@@ -175,5 +230,7 @@ footer{
 .vermelho{
     background-color: red;
 }
+
+
 
 
