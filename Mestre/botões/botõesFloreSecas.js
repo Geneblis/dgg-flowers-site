@@ -9,3 +9,6 @@ document.getElementById('conta').addEventListener('click', function() {
 document.getElementById('carrinho').addEventListener('click', function() {
     window.location.href = ''; 
 });
+document.getElementById('home').addEventListener('click', function() {
+    window.location.href = '../principal/idex.html'; 
+});

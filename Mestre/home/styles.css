@@ -167,3 +167,23 @@ footer{
     width: 130px;
     height: 30px;
 }
+tituloF {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o body ocupar toda a altura da viewport */
+    margin: 0; /* Remove a margem padrão */
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: 'Georgia', serif; /* Fonte serifada para um visual mais formal */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem acima e abaixo do título */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    border-bottom: 2px solid #ccc; /* Linha inferior para destaque */
+    padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
+}
