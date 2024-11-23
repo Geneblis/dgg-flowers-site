@@ -47,9 +47,8 @@ footer{
     margin: 10px;
     width: 200px;
     height:200px ;
-    background-image: url('../home/imagens/flor_abacaxi.webp');
-    background-size: cover;
-    background-position: center; 
+    
+    background-color: #a8cbc5;
 }
 .grid-container {
     display: grid;
@@ -197,7 +196,7 @@ footer{
 }
 .imagensDeFlores{
     padding: 10px;
-    height: 165px;
-    width: 200px;
+    height: fit-content;
+    width:fit-content;
     border-radius: 30px;
 }
