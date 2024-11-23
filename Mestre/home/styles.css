@@ -44,13 +44,12 @@ footer{
     border: 3px solid #ccc;
     border-radius: 15px;
     padding: 10px;
-    margin: 10px 0;
-    background-color: #a8cbc5;
+    margin: 10px;
     width: 200px;
     height:200px ;
-    flex-grow: 1;
-    justify-content: center;
-    
+    background-image: url('../home/imagens/flor_abacaxi.webp');
+    background-size: cover;
+    background-position: center; 
 }
 .grid-container {
     display: grid;
@@ -192,8 +191,13 @@ footer{
     text-align: center; /* Alinha o texto ao centro */
     padding: 10; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    margin-bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
     color:#f9f9f9;
+    margin-bottom: 0;
+}
+.imagensDeFlores{
+    padding: 10px;
+    height: 165px;
+    width: 200px;
+    border-radius: 30px;
 }
