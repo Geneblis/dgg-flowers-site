@@ -187,3 +187,13 @@ h1 {
     border-bottom: 2px solid #ccc; /* Linha inferior para destaque */
     padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
 }
+footer{
+    background-color: #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    margin-bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color:#f9f9f9;
+}
