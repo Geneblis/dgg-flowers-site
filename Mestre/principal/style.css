@@ -25,7 +25,7 @@ body {
     color: transparent;
 }
 .textoLogo{
-    font-size: 8px;
+    font-size: 20px;
 }
 .PedidosConta{
     position: absolute;
@@ -78,6 +78,8 @@ body {
     color: #333;
     flex-grow: 1;
     font-size: medium;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
  }
  .caixaNova{
     display: flex;
@@ -182,12 +184,10 @@ agora é a parte do story da pagina*/
     padding: 20px;
     justify-items: center;
     
-    
-    
-
 }
 .caixa {
-    border: 2px solid #ccc;
+    border: 3px solid #cccccc62;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
@@ -203,22 +203,27 @@ agora é a parte do story da pagina*/
     grid-template-columns: repeat(3, 300px);
     gap: 10px; 
     place-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     
 }
 .caixaDestaque {
-    border: 2px solid #ccc;
+    border: 3px solid #cccccc74;
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
-    background-color: #ffffff;
     width: 200px;
     height:50px ;
     flex-grow: 1;
     justify-content: center;
+    flex-basis: 200;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
     
 }
 .fotoDestaque {
-    border: 3px solid #ccc;
+    border: 3px solid #cccccc5a;
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
@@ -227,12 +232,26 @@ agora é a parte do story da pagina*/
     height:150px ;
     flex-grow: 1;
     justify-content: center;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
     
+}
+.imgDestaque{
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
 }
 .textosDasCaixas{
     font-size: 12px;
     text-align: center;
     margin-top: 0;
+}
+.textoDestaque{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+
+ 
 }
 .imagensDeFlores{
     max-width: 100%;
@@ -244,7 +263,11 @@ agora é a parte do story da pagina*/
     position: static;
 }
 p{
-    font-size: 9px;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
 }
 .preço{
     font-size: 12px;
@@ -267,7 +290,14 @@ footer{
 .vermelho{
     background-color: red;
 }
+/*KKKKK*/
 
+.KKK{
+    opacity: 0;
+    cursor:-webkit-zoom-in;
+}
 
-
+.KK{
+    font-size: 12px;
+}
 
