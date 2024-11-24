@@ -12,3 +12,12 @@ document.getElementById('carrinho').addEventListener('click', function() {
 document.getElementById('home').addEventListener('click', function() {
     window.location.href = '../principal/idex.html'; 
 });
+document.getElementById('seca').addEventListener('click', function() {
+    window.location.href = '../home/floreSecas.html'; 
+});
+document.getElementById('vaso').addEventListener('click', function() {
+    window.location.href = '../home/vasosFlores.html'; 
+});
+document.getElementById('protea').addEventListener('click', function() {
+    window.location.href = '../home/floresProteas.html'; 
+});

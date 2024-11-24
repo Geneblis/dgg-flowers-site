@@ -1,15 +1,13 @@
-// script.js
-document.getElementById('meuBotao').addEventListener('click', function() {
-<<<<<<< Updated upstream
-    window.location.href = '../principal/idex.html'; 
-    console.log("aromaticas")
+
+document.getElementById('aromaticas').addEventListener('click', function() {
+    window.location.href = '../home/floresAromaticas.html'; 
 });
 
-document.getElementById('fds2').addEventListener('click', function() {
-    window.location.href = '../principal/idex.html'; 
-    console.log("proteas")
+document.getElementById('proteas').addEventListener('click', function() {
+    window.location.href = '../home/floresProteas.html'; 
+});
+document.getElementById('vasosP').addEventListener('click', function() {
+    window.location.href = '../home/vasosFlores.html'; 
 });
 
-    window.location.href = '../home/index.html'; 
-});
->>>>>>> Stashed changes
+
