@@ -19,6 +19,9 @@ function atualizarCarrinho(){
     total += item.preco; 
 });
 totalSpan.innerHTML = total.toFixed(2)
+
+
+    alert(`${nome} adicionado ao carrinho`);
 }
 
 
@@ -33,3 +36,5 @@ function removerDoCarrinho(index){
 
 }
 atualizarCarrinho();
+console.log(`${nome} foi adicionado ${preco} ${imagem}`)
+console.log("me mata")
