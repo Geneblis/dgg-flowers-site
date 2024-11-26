@@ -22,6 +22,20 @@ button i {
   margin-right: 8px;
 }
 
+#verFAQButao {
+  background-color: #038C8C;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
 .produto {
   display: flex;
   justify-content: space-between;
