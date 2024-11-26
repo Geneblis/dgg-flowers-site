@@ -60,7 +60,7 @@
   <div class="header">
     <h1>Abacaxi ornamental</h1>
   </div>
-  <div class="produto">
+  <div id="produtos" class="produto">
     <img src="../home/imagens/flor abacaxi.webp" alt="Abacaxi ornamental" class="florimagem">
     <div class="produtodetalhes">
         <h2 class="produto-titulo">Abacaxi ornamental</h2>
@@ -68,7 +68,10 @@
         <div class="produto-estrelas">
           <p>⭐⭐⭐⭐⭐ (3 Análises)</p>
         </div>
+        <div class="produto" data-nome="Abacaxi ornamental" data-preco="49.90" data-imagem="../home/imagens/flor abacaxi.webp">
         <button class="comprar">Comprar</button>
+        <button class="comprar" onclick="adicionarAoCarrinho(this)">adicionar ao carrinho</button></div>
+
         <br>
         <p class="produto-descricao-about">Sobre este produto:</p>
         <p class="produto-descricao">Uma flor única e exótica para embelezar seu espaço.</p>
@@ -140,5 +143,6 @@
     <script src="../botões/botõesFloreSecas.js" defer></script>
     <script src="../botões/scripts.js" defer></script>
     <script src="./scripts_compras.js"></script>
+    <script src="envCarrinho.js"></script>
 </body>
 </html>
