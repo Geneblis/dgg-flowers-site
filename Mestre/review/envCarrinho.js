@@ -12,4 +12,6 @@ function adicionarAoCarrinho(button){
 
     alert(`${nome} adicionado ao carrinho`);
 
+    window.location.href = "../carrinho/carrinho.html";
+
 }
