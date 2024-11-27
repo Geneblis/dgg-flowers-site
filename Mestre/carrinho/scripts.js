@@ -36,5 +36,10 @@ function removerDoCarrinho(index){
 
 }
 atualizarCarrinho();
-console.log(`${nome} foi adicionado ${preco} ${imagem}`)
-console.log("me mata")
+
+function removerTudo() {
+  
+  localStorage.setItem('carrinho', JSON.stringify([]));
+
+  atualizarCarrinho();
+}
