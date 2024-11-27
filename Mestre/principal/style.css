@@ -157,6 +157,7 @@ agora é a parte do story da pagina*/
 }
 .butto{
     background-color: #00b4b4;
+    opacity: 100%;
 }
 
 .button--antes{
@@ -304,7 +305,7 @@ footer{
     font-size: 12px;
 }
 button{
-    opacity: 0; /* O botão será invisível, mas ainda ocupará espaço e será clicável */
+ opacity: 0; /* O botão será invisível, mas ainda ocupará espaço e será clicável */
     margin: 0; /* Remove margens, se houver */
     position: absolute;
     cursor: pointer;
