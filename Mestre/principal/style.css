@@ -148,12 +148,15 @@ agora é a parte do story da pagina*/
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(221, 0, 0, 0.8);
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
     
+}
+.butto{
+    background-color: #00b4b4;
 }
 
 .button--antes{
