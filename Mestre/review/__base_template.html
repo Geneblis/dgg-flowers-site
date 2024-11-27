@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor placeholder</title>
+    <title>NOME_DA_FLOR</title>
     <link rel="stylesheet" href="styles.css">
     <!--icones para pagamento-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -55,17 +55,20 @@
 
 
   <div class="header">
-    <h1>Flor Placeholder</h1>
+    <h1>NOME_DA_FLOR</h1>
   </div>
   <div class="produto">
-    <img src="URL_DA_IMAGEM" alt="Flor Placeholder" class="florimagem">
+    <img src="URL_DA_IMAGEM" alt="NOME_DA_FLOR" class="florimagem">
     <div class="produtodetalhes">
-        <h2 class="produto-titulo">Flor Placeholder</h2>
-        <p class="produto-preco">R$ 49,90</p>
+        <h2 class="produto-titulo">NOME_DA_FLOR</h2>
+        <p class="produto-preco">PREÇO</p>
         <div class="produto-estrelas">
-          <p>⭐⭐⭐⭐⭐ (3 Análises)</p>
+          <p>⭐⭐⭐⭐⭐ (2 Análises)</p>
         </div>
-        <button class="comprar">Comprar</button>
+        <div class="produto" data-nome="NOME_DA_FLOR" data-preco="PREÇO"  data-imagem="URL_DA_IMAGEM">
+            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
         <br>
         <p class="produto-descricao-about">Sobre este produto:</p>
         <p class="produto-descricao">Uma flor única e exótica para embelezar seu espaço.</p>
@@ -154,6 +157,14 @@
             <button class="voltar">Voltar</button>
         </div>
     </div>
+    <div id="agradecimentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Obrigado por comprar!</h2>
+            <p>Volte sempre!</p>
+            <button id="fecharAgradecimento">Fechar</button>
+        </div>
+    </div>
 
     <!--fooster-->
     <footer>
@@ -161,9 +172,10 @@
     </footer>
     <!--scripts abaixo-->
     <script src="../principal/Script.js" defer></script>
-    <script src="../botões/botão.js"></script>
-    <script src="../botões/botõesFloreSecas.js" defer></script>
-    <script src="../botões/scripts.js" defer></script>
-    <script src="./scripts_compras.js"></script>
+    <script src="../botoes/botão.js"></script>
+    <script src="../botoes/botõesFloreSecas.js" defer></script>
+    <script src="../botoes/scripts.js" defer></script>
+    <script src="./javascript/scripts_compras.js"></script>
+    <script src="./javascript/envCarrinho.js"></script>
 </body>
 </html>

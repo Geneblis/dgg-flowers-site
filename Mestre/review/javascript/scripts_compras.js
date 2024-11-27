@@ -11,6 +11,8 @@ var boletoButton = document.getElementById("boleto");
 
 var finalizarBotoes = document.querySelectorAll(".finalizar");
 
+var modalAgradecimento = document.getElementById("agradecimentoModal");
+
 // Abrir o modal de pagamento
 comprando.onclick = function() {
     modal.style.display = "block";
@@ -54,6 +56,16 @@ boletoButton.onclick = function() {
     modalBoleto.style.display = "block"; 
 }
 
+//agradecimentos
+document.getElementById("fecharAgradecimento").onclick = function() {
+    modalAgradecimento.style.display = "none";
+};
+document.querySelectorAll(".fechar_pagamento").forEach(function(click) {
+    click.onclick = function() {
+        modalAgradecimento.style.display = "none";
+    };
+});
+
 // Seleciona todos os botões "Voltar" e adiciona o evento de clique
 document.querySelectorAll(".voltar").forEach(function(voltarButton) {
     voltarButton.onclick = function() {
@@ -64,9 +76,30 @@ document.querySelectorAll(".voltar").forEach(function(voltarButton) {
     }
 });
 
-//finalizar a compra
+//finalizar a compra, remove todos os produtos
 finalizarBotoes.forEach(function(finalizarButao) {
     finalizarButao.onclick = function() {
-        removerDoCarrinho(this);
+        modalAgradecimento.style.display = "block"; //ativar modal de agradecimento
+
+        //o certo seria criar uma variavel pra ver se ele esta finalizando uma compra direta ou pelo carrinho e decidir
+        //se vai remover tudo ou remover o produto, neste caso usar um
+        //removerDoCarrinho(this);
+        //-G.
+        removerTudo();
     };
 });
+
+
+//botao de FAQ
+document.getElementById("verFAQButao").onclick = function() {
+    var conteudoFAQ = document.getElementById("faqContainer");
+    
+    // Verifica se o conteúdo FAQ está oculto ou visível
+    if (conteudoFAQ.style.display === "none" || conteudoFAQ.style.display === "") {
+        conteudoFAQ.style.display = "block";
+        this.innerText = "Ver Menos";
+    } else {
+        conteudoFAQ.style.display = "none";
+        this.innerText = "Ver Perguntas Frequentes";
+    }
+};

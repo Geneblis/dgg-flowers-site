@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abacaxi ornamental</title>
+    <title>Abacaxi Ornamental</title>
     <link rel="stylesheet" href="styles.css">
     <!--icones para pagamento-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!--Alguem tem q n ironicamente trocar todos os buttons por a href.-->
-    <!--Links para outras paginas vao ficar verdes ate isto ser corrigido.-->
-    <!--G.-->
     <div class="header">
         <div class="logo2">
             <img class="logo" src="../principal/imagens/logo.png" alt="logo com 3 flores">
@@ -58,20 +55,20 @@
 
 
   <div class="header">
-    <h1>Abacaxi ornamental</h1>
+    <h1>Abacaxi Ornamental</h1>
   </div>
-  <div id="produtos" class="produto">
-    <img src="../home/imagens/flor abacaxi.webp" alt="Abacaxi ornamental" class="florimagem">
+  <div class="produto">
+    <img src="../home/imagens/flor abacaxi.webp" alt="Abacaxi Ornamental" class="florimagem">
     <div class="produtodetalhes">
-        <h2 class="produto-titulo">Abacaxi ornamental</h2>
-        <p class="produto-preco">R$ 49,90</p>
+        <h2 class="produto-titulo">Abacaxi Ornamental</h2>
+        <p class="produto-preco">49,49</p>
         <div class="produto-estrelas">
-          <p>⭐⭐⭐⭐⭐ (3 Análises)</p>
+          <p>⭐⭐⭐⭐⭐ (2 Análises)</p>
         </div>
-        <div class="produto" data-nome="Abacaxi ornamental" data-preco="49.90" data-imagem="../home/imagens/flor abacaxi.webp">
-        <button class="comprar">Comprar</button>
-        <button class="comprar" onclick="adicionarAoCarrinho(this)">adicionar ao carrinho</button></div>
-
+        <div class="produto" data-nome="Abacaxi Ornamental" data-preco="49,49"  data-imagem="../home/imagens/flor abacaxi.webp">
+            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
         <br>
         <p class="produto-descricao-about">Sobre este produto:</p>
         <p class="produto-descricao">Uma flor única e exótica para embelezar seu espaço.</p>
@@ -160,18 +157,25 @@
             <button class="voltar">Voltar</button>
         </div>
     </div>
+    <div id="agradecimentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Obrigado por comprar!</h2>
+            <p>Volte sempre!</p>
+            <button id="fecharAgradecimento">Fechar</button>
+        </div>
+    </div>
 
     <!--fooster-->
     <footer>
         <p>© 2023 Meu Site. Todos os direitos reservados.</p>
     </footer>
     <!--scripts abaixo-->
-    <script src="envCarrinho.js"></script>
     <script src="../principal/Script.js" defer></script>
-    <script src="../botões/botão.js"></script>
-    <script src="../botões/botõesFloreSecas.js" defer></script>
-    <script src="../botões/scripts.js" defer></script>
-    <script src="./scripts_compras.js"></script>
-    
+    <script src="../botoes/botão.js"></script>
+    <script src="../botoes/botõesFloreSecas.js" defer></script>
+    <script src="../botoes/scripts.js" defer></script>
+    <script src="./javascript/scripts_compras.js"></script>
+    <script src="./javascript/envCarrinho.js"></script>
 </body>
 </html>

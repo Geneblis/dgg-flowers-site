@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!--Alguem tem q n ironicamente trocar todos os buttons por a href.-->
-    <!--Links para outras paginas vao ficar verdes ate isto ser corrigido.-->
-    <!--G.-->
     <div class="header">
         <div class="logo2">
             <img class="logo" src="../principal/imagens/logo.png" alt="logo com 3 flores">
@@ -61,14 +58,17 @@
     <h1>Alpínia</h1>
   </div>
   <div class="produto">
-    <img src="../home/imagens/flor vermelha.webp" alt="imagem da flor requesitada*" class="florimagem">
+    <img src="../home/imagens/flor vermelha.webp" alt="Alpínia" class="florimagem">
     <div class="produtodetalhes">
         <h2 class="produto-titulo">Alpínia</h2>
-        <p class="produto-preco">R$ 49,90</p>
+        <p class="produto-preco">36.55</p>
         <div class="produto-estrelas">
-          <p>⭐⭐⭐⭐⭐ (3 Análises)</p>
+          <p>⭐⭐⭐⭐⭐ (2 Análises)</p>
         </div>
-        <button class="comprar">Comprar</button>
+        <div class="produto" data-nome="Alpínia" data-preco="36.55"  data-imagem="../home/imagens/flor vermelha.webp">
+            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
         <br>
         <p class="produto-descricao-about">Sobre este produto:</p>
         <p class="produto-descricao">Uma flor única e exótica para embelezar seu espaço.</p>
@@ -128,13 +128,41 @@
             </button>
         </div>
     </div>
-    
     <div id="cartaoModal" class="modal">
         <div class="modal-content">
-            <span class="fechar_pagamento_cartao">&times;</span>
+            <span class="fechar_pagamento">&times;</span>
             <h2>Número do cartão</h2>
             <input type="text" placeholder="Digite o número do cartão" />
-            <br><br>
+            <br>
+            <button class="finalizar">Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Detalhes do PIX</h2>
+            <p>Por favor, escaneie o QR code ou copie os dados abaixo:</p>
+            <p>Chave: exemplo@pix.com</p>
+            <button class="finalizar">Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+    <div id="boletoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Detalhes do Boleto</h2>
+            <p>Seu boleto foi gerado com sucesso. Clique no botão abaixo para baixar.</p>
+            <button class="finalizar">Baixar Boleto & Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+    <div id="agradecimentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Obrigado por comprar!</h2>
+            <p>Volte sempre!</p>
+            <button id="fecharAgradecimento">Fechar</button>
         </div>
     </div>
 
@@ -144,9 +172,10 @@
     </footer>
     <!--scripts abaixo-->
     <script src="../principal/Script.js" defer></script>
-    <script src="../botões/botão.js"></script>
-    <script src="../botões/botõesFloreSecas.js" defer></script>
-    <script src="../botões/scripts.js" defer></script>
-    <script src="./scripts_compras.js"></script>
+    <script src="../botoes/botão.js"></script>
+    <script src="../botoes/botõesFloreSecas.js" defer></script>
+    <script src="../botoes/scripts.js" defer></script>
+    <script src="./javascript/scripts_compras.js"></script>
+    <script src="./javascript/envCarrinho.js"></script>
 </body>
 </html>
