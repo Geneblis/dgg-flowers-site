@@ -155,28 +155,29 @@ agora é a parte do story da pagina*/
     z-index: 1;
     
 }
-.butto{
-    background-color: #00b4b4;
-    opacity: 100%;
-}
 
-.button--antes{
+
+.antes{
     left: 10px;
     
     
 }
 
-.button--prox{
+.prox{
     right: 10px;
 }
 
 .bolas-ordenadas {
-    display: flex;
+    
     gap: 10px; 
     flex-direction: row;
     align-items: center;
-    overflow: hidden;
+    
     transition: transform 0.5s ease;
+    display: flex; /* Para que os itens fiquem em linha */
+    overflow:hidden; /* Para permitir a rolagem horizontal */
+    scroll-behavior: smooth; /* Para uma rolagem suave */
+
     
 }
 
@@ -303,12 +304,4 @@ footer{
 
 .KK{
     font-size: 12px;
-}
-button{
- opacity: 0; /* O botão será invisível, mas ainda ocupará espaço e será clicável */
-    margin: 0; /* Remove margens, se houver */
-    position: absolute;
-    cursor: pointer;
-    width: 130px;
-    height: 30px;
 }
