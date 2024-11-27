@@ -49,7 +49,16 @@ footer{
     
 }
 .logo{
-    width: 50px;
+    width: 130px;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    background-color: #00b4b4;
+}
+.logoiv{
+    width: 100px;
+    color: transparent;
 }
 .textoLogo{
     font-size: 8px;
@@ -69,6 +78,12 @@ footer{
     grid-template-columns: repeat(2, 100px);
     gap: 1px; /* Espaçamento entre as caixas */
 }
+.grid-containerL {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+    right: 0;
+}
 .caixaP {
     display: flex;
     border: 1px solid #ccc;
@@ -82,6 +97,32 @@ footer{
     align-items: center;
 
     
+}
+.caixaL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 7px;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+}
+.loginCaixa{
+    
+    position: absolute;
+    top: 5px; 
+    left: 140px; 
+    padding: 5px; 
+    display: flex; 
+    
+    align-items: flex-end;
+    color: #333;
 }
 .caixaNova{
     display: flex;
@@ -227,11 +268,15 @@ body {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+footer{
+    background-color: #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position:static; /* Posiciona o rodapé */
+    margin-bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color:#f9f9f9;
 }
 
 .footer-container {
