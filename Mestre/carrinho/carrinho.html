@@ -30,27 +30,64 @@
         <button onclick="removerTudo()">remover tudo</button>
         <button onclick="atualizarCarrinho()">atualizar carrinho</button>
         <div class="payment-method">
-          <p>Método de pagamento</p>
-          <button id="Cartao">
-              <i class="fas fa-credit-card"></i> Cartão de Crédito
-          </button>
-          <button id="Pix" lass="active">
-              <i class="fab fa-pix"></i> PIX
-          </button>
-          <button id="Boleto">
-              <i class="fas fa-file-invoice"></i> Boleto
-          </button>
         </div>
-        <button class="Finalize">Finalizar</button>
+        <button class="comprar">Continuar para compra</button>
       </div>
     </main>
    
+  <!--modal dos metodos de pagamento-->
+    <div id="pagamentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Escolha uma forma de pagamento</h2>
+            <br>
+            <button id="cartaoCredito">
+                <i class="fas fa-credit-card"></i> Cartão de Crédito
+            </button>
+            <button id="pix">
+                <i class="fab fa-pix"></i> PIX
+            </button>
+            <button id="boleto">
+                <i class="fas fa-file-invoice"></i> Boleto
+            </button>
+        </div>
+    </div>
+    <div id="cartaoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Número do cartão</h2>
+            <input type="text" placeholder="Digite o número do cartão" />
+            <br>
+            <button class="finalizar">Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Detalhes do PIX</h2>
+            <p>Por favor, escaneie o QR code ou copie os dados abaixo:</p>
+            <p>Chave: exemplo@pix.com</p>
+            <button class="finalizar">Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
+    <div id="boletoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Detalhes do Boleto</h2>
+            <p>Seu boleto foi gerado com sucesso. Clique no botão abaixo para baixar.</p>
+            <button class="finalizar">Baixar Boleto & Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+        </div>
+    </div>
     
   </div>
   <footer>
     
   </footer>
   <script src="Scripts.js"></script>
+  <script src="../review/scripts_compras.js"></script>
 </body>
 </html>
 
