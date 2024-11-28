@@ -58,11 +58,24 @@ boletoButton.onclick = function() {
 
 //agradecimentos
 document.getElementById("fecharAgradecimento").onclick = function() {
+
+    //fecha tudo
+    modalAgradecimento.style.display = "none";
+    modalCartao.style.display = "none"; 
+    modalPix.style.display = "none"; 
+    modalBoleto.style.display = "none"; 
+    modal.style.display = "none";
     modalAgradecimento.style.display = "none";
 };
 document.querySelectorAll(".fechar_pagamento").forEach(function(click) {
     click.onclick = function() {
+        
+        //fecha tudo
         modalAgradecimento.style.display = "none";
+        modalCartao.style.display = "none"; 
+        modalPix.style.display = "none"; 
+        modalBoleto.style.display = "none"; 
+        modal.style.display = "none";
     };
 });
 
