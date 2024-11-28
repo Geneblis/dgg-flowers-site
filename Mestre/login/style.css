@@ -40,7 +40,8 @@
         border-color: transparent;
     }
     button{
-        width: 70px;
-        height: 20px;
-        border-radius: 35px;
+        width: 200px;
+        height: 70px;
+        border-radius: 100px;
+        font-size:25px ;
     }
