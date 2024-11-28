@@ -38,7 +38,7 @@ button i {
 
 .produto {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px;
 }
 .florimagem {
@@ -89,6 +89,7 @@ button i {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 2%;
 }
 .reviews-group {
   background-color: #f2f2f2;
@@ -102,7 +103,7 @@ button i {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 10px;
-   border-radius: 5px;
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .review-autor {

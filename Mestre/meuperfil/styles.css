@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #555;
+}
+
+.support-button {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height : 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*tudo da main aqui em baixo*/
+.header {
+    background-color: #038C8C;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.logo{
+    width: 130px;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    background-color: #00b4b4;
+}
+.logoiv{
+    width: 100px;
+    color: transparent;
+}
+.textoLogo{
+    font-size: 20px;
+}
+.PedidosConta{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+.grid-containerP {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+}
+.caixaP {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px ;
+    background-color: #f9f9f9;
+    width: 70px;
+    height:10px ;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+
+    
+}
+
+.sequenciaCaixas { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+ .caixaSequencia { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    flex-grow: 1;
+    font-size: medium;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+ }
+ .caixaNova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 172px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.carrinho{
+    font-size: 15px;
+    position: absolute;
+    top: 30px; 
+    right: 15px; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+/* essa merda aqui de cima é o cabeçalho q eu demorei horas so PQ N SABIA USAR A PORRA DA DIV
+agora é a parte do story da pagina*/
+
+.story{
+    position: relative;
+    height: 100px;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.3);
+    background-color: #535353;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item{
+    scroll-snap-align: center;
+    
+}
+
+.bolas{
+    height: 80px;
+    width: 80px;
+    background-color: #000000;
+    border-radius: 90px;
+    margin: 5px;
+    margin-left: 15px; 
+       
+}
+.button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(221, 0, 0, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    
+}
+
+
+.antes{
+    left: 10px;
+    
+    
+}
+
+.prox{
+    right: 10px;
+}
+
+.bolas-ordenadas {
+    
+    gap: 10px; 
+    flex-direction: row;
+    align-items: center;
+    
+    transition: transform 0.5s ease;
+    display: flex; /* Para que os itens fiquem em linha */
+    overflow:hidden; /* Para permitir a rolagem horizontal */
+    scroll-behavior: smooth; /* Para uma rolagem suave */
+
+    
+}
+
+
+/* agora o main*/
+
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    justify-items: center;
+    
+}
+.caixa {
+    border: 3px solid #cccccc62;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    width: 200px;
+    height:200px ;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px; 
+    place-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+.caixaDestaque {
+    border: 3px solid #cccccc74;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    height:50px ;
+    flex-grow: 1;
+    justify-content: center;
+    flex-basis: 200;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
+    
+}
+.fotoDestaque {
+    border: 3px solid #cccccc5a;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    width: 400px;
+    height:150px ;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
+    
+}
+.imgDestaque{
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+}
+.textosDasCaixas{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+}
+.textoDestaque{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+
+ 
+}
+.imagensDeFlores{
+    max-width: 100%;
+    height: 130px;
+    border-radius: 15px;
+    border: 2px solid rgb(171, 171, 171);
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    margin-top: 1;
+    position: static;
+}
+p{
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+.preço{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* agora o footer*/
+footer{
+    background-color: #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    margin-bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color:#f9f9f9;
+}
