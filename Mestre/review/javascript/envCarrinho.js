@@ -12,8 +12,4 @@ function adicionarAoCarrinho(button){
 
     console.log(`${nome} foi adicionado ${preco} ${imagem}`)
     alert(`${nome} adicionado ao carrinho`);
-
-
-    
-
 }
