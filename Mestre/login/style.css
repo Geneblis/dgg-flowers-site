@@ -60,8 +60,7 @@ body { font-family: Arial, sans-serif;
     }
     .form-container { width: 100%; 
         width: 700px;
-        height: 800px;
-        
+        height: 800px;   
         border: 2px solid #080808; 
         border-radius: 0px; 
         background-color: #bdb8b8; 
@@ -92,7 +91,7 @@ body { font-family: Arial, sans-serif;
     button:active {
         background-color: #372b8a;
         transform: scale(0.95); 
-    
+    }
     button:focus {
         outline: none; 
         box-shadow: 0 0 0 4px rgba(69, 57, 184, 0.5); 

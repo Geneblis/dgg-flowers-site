@@ -12,6 +12,7 @@ body {
     box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
 .logo{
     width: 130px;
     position: absolute;
@@ -117,6 +118,9 @@ h1 {
     line-height: 1.5; /* Altura da linha para melhor legibilidade */
     border-bottom: 2px solid #ccc; /* Linha inferior para destaque */
     padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
+}
+a{
+    text-decoration: none;
 }
 /* essa merda aqui de cima é o cabeçalho q eu demorei horas so PQ N SABIA USAR A PORRA DA DIV
 agora é a parte do story da pagina*/
