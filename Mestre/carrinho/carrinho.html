@@ -36,59 +36,81 @@
     </main>
    
   <!--modal dos metodos de pagamento-->
-  <div id="pagamentoModal" class="modal">
-      <div class="modal-content">
-          <span class="fechar_pagamento">&times;</span>
-          <h2>Escolha uma forma de pagamento</h2>
-          <br>
-          <button id="cartaoCredito">
-              <i class="fas fa-credit-card"></i> Cartão de Crédito
-          </button>
-          <button id="pix">
-              <i class="fab fa-pix"></i> PIX
-          </button>
-          <button id="boleto">
-              <i class="fas fa-file-invoice"></i> Boleto
-          </button>
-      </div>
-  </div>
-  <div id="cartaoModal" class="modal">
-      <div class="modal-content">
-          <span class="fechar_pagamento">&times;</span>
-          <h2>Número do cartão</h2>
-          <input type="text" placeholder="Digite o número do cartão" />
-          <br>
-          <button class="finalizar">Finalizar Compra</button>
-          <button class="voltar">Voltar</button>
-      </div>
-  </div>
-  <div id="pixModal" class="modal">
-      <div class="modal-content">
-          <span class="fechar_pagamento">&times;</span>
-          <h2>Detalhes do PIX</h2>
-          <p>Por favor, escaneie o QR code ou copie os dados abaixo:</p>
-          <p>Chave: exemplo@pix.com</p>
-          <button class="finalizar">Finalizar Compra</button>
-          <button class="voltar">Voltar</button>
-      </div>
-  </div>
-  <div id="boletoModal" class="modal">
-      <div class="modal-content">
-          <span class="fechar_pagamento">&times;</span>
-          <h2>Detalhes do Boleto</h2>
-          <p>Seu boleto foi gerado com sucesso. Clique no botão abaixo para baixar.</p>
-          <button class="finalizar">Baixar Boleto & Finalizar Compra</button>
-          <button class="voltar">Voltar</button>
-      </div>
-  </div>
-  <div id="agradecimentoModal" class="modal">
-      <div class="modal-content">
-          <span class="fechar_pagamento">&times;</span>
-          <h2>Obrigado por comprar!</h2>
-          <p>Volte sempre!</p>
-          <button id="fecharAgradecimento">Fechar</button>
-      </div>
-  </div>
+    <div id="pagamentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Escolha uma forma de pagamento</h2>
+            <br>
+            <button id="cartaoCredito">
+                <i class="fas fa-credit-card"></i> Cartão de Crédito
+            </button>
+            <button id="pix">
+                <i class="fab fa-pix"></i> PIX
+            </button>
+            <button id="boleto">
+                <i class="fas fa-file-invoice"></i> Boleto
+            </button>
+        </div>
+    </div>
+    <div id="cartaoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Informe seu cartão</h2>
+            <div class="modal-content-cartao">
+                <form>
+                    <label for="cartao_num">Digite o numero do seu Cartão:</label>
+                    <br>
+                    <input type="text" id="cartao_num" name="cartao_num" maxlength="19" required oninput="formatCartao(this)">
+                    <br>
+                    <label for="cvv">Digite seu Código de Segurança (CVV):</label>
+                    <br>
+                    <input type="number" id="cvv" name="cvv" minlength="0" maxlength="3" required>
+                    <br>
+                    <label for="titular">Insira o nome do Cartão (titular):</label>
+                    <br>
+                    <input type="text" id="titular" name="titular" minlength="0" maxlength="32" required>
+                    <br>
+                    <label for="cartao_valid">Insira a data de expiração do cartão:</label>
+                    <br>
+                    <input type="date" id="cartao_valid" name="cartao_valid" required>
+                    <br>
+                    <button type="submit">Adicionar Cartão</button>
+                </form>
+            </div>
+            <br>
+            <button class="voltar">Voltar</button>
+            <button class="finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Pagamento via PIX</h2>
+            <p>Por favor, escaneie o QR code abaixou ou envie para a chave abaixo:</p>
+            <img src="../principal/imagens/pix-iago.png" alt="pix de iago pfv de dinheiro para este homem!">
+            <p>Chave: dgginterprised@gmail.com</p>
+            <button class="voltar">Voltar</button>
+            <button class="finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+    <div id="boletoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Detalhes do Boleto</h2>
+            <img src="../principal/imagens/boleto-iago.png" alt="boleto.png">
+            <p>Seu boleto foi gerado com sucesso. Clique no botão abaixo para baixar.</p>
+            <button class="voltar">Voltar</button>
+            <button class="finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+    <div id="agradecimentoModal" class="modal">
+        <div class="modal-content">
+            <span class="fechar_pagamento">&times;</span>
+            <h2>Obrigado por comprar!</h2>
+            <p>Volte sempre!</p>
+            <button id="fecharAgradecimento">Fechar</button>
+        </div>
+    </div>
     
   </div>
   <footer>

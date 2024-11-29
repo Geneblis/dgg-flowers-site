@@ -44,6 +44,19 @@ cartaoCredito.onclick = function() {
     modalCartao.style.display = "block"; 
 }
 
+//funcao pro cartao de credito aparecer pontinho dps de 4 digitos.
+function formatCartao(input) {
+    let value = input.value.replace(/\D/g, '');
+    let formattedValue = '';
+    for (let i = 0; i < value.length; i++) {
+        if (i > 0 && i % 4 === 0) {
+            formattedValue += ' ';
+        }
+        formattedValue += value[i];
+    }
+    input.value = formattedValue;
+}
+
 // Abrir o modal de PIX
 pixButton.onclick = function() {
     modal.style.display = "none"; 
@@ -116,3 +129,4 @@ document.getElementById("verFAQButao").onclick = function() {
         this.innerText = "Ver Perguntas Frequentes";
     }
 };
+

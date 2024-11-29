@@ -36,6 +36,7 @@ button i {
   border-radius: 5px;
 }
 
+
 .produto {
   display: flex;
   justify-content: flex-start;
@@ -137,6 +138,12 @@ button i {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+.modal-content-cartao{
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #000000;
+  width: 70%;
 }
 
 .fechar_pagamento {
@@ -270,10 +277,12 @@ footer{
     margin: 2px ;
     background-color: #f9f9f9;
     width: 70px;
-    height:10px ;
+    height: 10px;
     justify-content: center;
     border-radius: 15px;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
     
 }
 .caixaNova{
@@ -410,4 +419,14 @@ h1 {
 }
 .textoLogo{
   font-size: 20px;
+}
+
+/*cartão ee outros, finalizacao de pagamento sla*/
+#cartao_num{
+  height: 10%;
+  width: 25%;
+}
+#cvv{
+  height: 10%;
+  width: 5%;
 }
