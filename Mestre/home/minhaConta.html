@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha conta</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="../principal/Script.js" defer></script>
     </head>
 
     <body>
@@ -66,46 +65,60 @@
             </div>
         </div>
 
+        <!--botões visiveis-->
         <div class="main-content">
-
-            <div class="principal">
-
-                <div class="grid-container">
-
-                    <div class="caixa">
-
-                        <h2><a href>Seção 1</a></h2>
-                        <p>Pedido aguardando pagamento</p>
-                    </div>
-
-                    <div class="caixa">
-
-                        <h2><a href>Seção 2</a></h2>
-                        <p>aguardando envio</p>
-
-                    </div>
-
+            <div class="minha-conta-container">
+                <h1>Minha Conta</h1>
+                <div class="section" onclick="openModal('pedidosModal')">
+                    <h2>Minhas Compras</h2>
+                    <p>Gerencie o seu histórico de compras e envios aqui.</p>
                 </div>
-
-                <div class="grid-container">
-                    <div class="caixa">
-                        <h2><a href>Seção 3</a></h2>
-                        <p>enviado</p>
-                    </div>
-                    <div class="caixa">
-                        <h2><a href>Seção 4</a></h2>
-                        <p>avaliação</p>
-                    </div>
+                <div class="section" onclick="openModal('apelacoesModal')">
+                    <h2>Apelações e Reembolsos</h2>
+                    <p>Gerencie suas apelações.</p>
                 </div>
-
-                <div class="sequenciaCaixas">
-                    <div class="caixadev">
-                        reembolso e devoluções
-                    </div>
+                <div class="section" onclick="openModal('configuracoesModal')">
+                    <h2>Configurações</h2>
+                    <p>Configurações da sua conta.</p>
                 </div>
-
+                <div class="support-button" onclick="openModal('suporteModal')">
+                    <h2>Suporte / Fale Conosco</h2>
+                </div>
             </div>
 
+            <!-- Modais -->
+            <!-- Visivel após clicar no botão dos containers, só colocar as informações dentro das divs. -->
+            <div id="pedidosModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('pedidosModal')">&times;</span>
+                    <h2>Pedidos Feitos</h2>
+                    <p>Detalhes dos pedidos realizados.</p>
+                </div>
+            </div>
+
+            <div id="apelacoesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('apelacoesModal')">&times;</span>
+                    <h2>Apelações</h2>
+                    <p>Gerenciar suas apelações.</p>
+                </div>
+            </div>
+
+            <div id="configuracoesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('configuracoesModal')">&times;</span>
+                    <h2>Configurações</h2>
+                    <p>Configurações da sua conta.</p>
+                </div>
+            </div>
+
+            <div id="suporteModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('suporteModal')">&times;</span>
+                    <h2>Suporte / Fale Conosco</h2>
+                    <p>Entre em contato com o suporte.</p>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -116,6 +129,7 @@
         <script src="../botoes/scripts.js" defer></script>
         <script src="../botoes/botao.js" defer></script>
         <script src="../botoes/botoesFloreSecas.js" defer></script>
+        <script src="../botoes/minhaconta_scripts.js" defer></script>
     </body>
 
 </html>
