@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Suporte ao Cliente - DGG Flores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="central-class">
+            <h1>Central de Suporte ao Cliente</h1>
+            <h3>Escolha uma das opções abaixo para que possamos lhe ajudar da melhor forma possivel!</h3>
+            <br>
+            <br>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#faq" onclick="openModal('faqModal')">Perguntas Frequentes</a></li>
+                    <li><a href="#suporte" onclick="openModal('suporteModal')">Suporte</a></li>
+                    <li><a href="#politicas" onclick="openModal('politicasModal')">Políticas de Privacidade</a></li>
+                    <li><a href="#termos" onclick="openModal('termosModal')">Termos de Serviço</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div>
+        <div class="central-container">
+            <h1></h1>
+            <div class="section" onclick="openModal('faqModal')">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="section" onclick="openModal('suporteModal')">
+                <h2>Suporte</h2>
+            </div>
+            <div class="section" onclick="openModal('politicasModal')">
+                <h2>Políticas de Privacidade</h2>
+            </div>
+            <div class="section" onclick="openModal('termosModal')">
+                <h2>Termos de Serviços</h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Modais -->
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('faqModal')">&times;</span>
+            <h2>Perguntas Frequentes</h2>
+            <p><strong>1. Como faço um pedido?</strong><br>Você pode fazer um pedido através do nosso site, adicionando produtos ao carrinho e seguindo as instruções de checkout.</p>
+            <p><strong>2. Quais são as opções de pagamento?</strong><br>Aceitamos cartões de crédito, débito e PayPal.</p>
+            <p><strong>3. Como posso rastrear meu pedido?</strong><br>Após o envio, você receberá um e-mail com um link para rastrear seu pedido.</p>
+        </div>
+    </div>
+
+    <div id="suporteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('suporteModal')">&times;</span>
+            <h2>Suporte</h2>
+            <p>Entre em contato conosco através do chat abaixo:</p>
+            <div id="chat">
+                <div id="chat-box">
+                    <div id="messages"></div>
+                </div>
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="politicasModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('politicasModal')">&times;</span>
+            <h2>Políticas de Privacidade</h2>
+            <p>Suas informações pessoais são importantes para nós. Não compartilhamos seus dados com terceiros.</p>
+        </div>
+    </div>
+
+    <div id="termosModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termosModal')">&times;</span>
+            <h2>Termos de Serviço</h2>
+            <p>Ao usar nosso site, você concorda com nossos termos e condições. Por favor, leia atentamente.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info-above-footer">
+            <h2>Informações</h2>
+            <ul>
+                <li><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</li>
+                <li><a href="../central_de_ajuda/index.html">Central de Ajuda</a></li>
+                <li><a href="../central_de_ajuda/index.html?modal=faq"> Perguntas Frequentes</a></li>
+                <li><a href="../central_de_ajuda/index.html?modal=suporte">Suporte por Chat</a></li>
+                <li><strong>Contatos:</strong> contato@exemplo.com</li>
+                <li><a href="../central_de_ajuda/index.html?modal=politicas">Política de Privacidade</a></li>
+                <li><a href="../central_de_ajuda/index.html?modal=termos">Termos de Serviço</a></li>
+                <li><a href="../sobre nos/index.html">Sobre Nós</a></li>
+                <li><strong>Direitos Autorais:</strong> © 2023 Exemplo. Todos os direitos reservados.</li>
+                <li>
+                    <strong>Redes Sociais:</strong>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>,
+                    <a href="https://twitter.com" target="_blank">Twitter</a>,
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <p>© 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -77,9 +77,8 @@
                     <p>Gerencie suas apelações.</p>
                 </div>
                 <div class="section" onclick="openModal('configuracoesModal')">
-                    <h2>Configurações</h2>
-                    <p>Configurações da sua conta.</p>
-                    <input>
+                    <h2>Preferências e Configurações</h2>
+                    <p>Configurações e Preferências do site e da sua conta.</p>
                 </div>
                 <div class="support-button" onclick="openModal('suporteModal')">
                     <h2>Suporte / Fale Conosco</h2>
@@ -101,14 +100,97 @@
                     <span class="close" onclick="closeModal('apelacoesModal')">&times;</span>
                     <h2>Apelações</h2>
                     <p>Gerenciar suas apelações.</p>
+
+                    <h3>Apelações Anteriores</h3>
+                    <div class="apelacoes-container">
+                        <ul id="listaApelacoes">
+                            <li>
+                                <strong>Pedido #12345</strong> - Status: <span style="color: green;">Aprovado</span> - Data: 01/01/2023
+                            </li>
+                            <li>
+                                <strong>Pedido #12346</strong> - Status: <span style="color: red;">Rejeitado</span> - Data: 15/01/2023
+                            </li>
+                            <li>
+                                <strong>Pedido #12347</strong> - Status: <span style="color: orange;">Pendente</span> - Data: 20/01/2023
+                            </li>
+                            <li>
+                                <strong>Pedido #12348</strong> - Status: <span style="color: green;">Aprovado</span> - Data: 25/01/2023
+                            </li>
+                            <li>
+                                <strong>Pedido #12349</strong> - Status: <span style="color: red;">Rejeitado</span> - Data: 30/01/2023
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Nova Apelação</h3>
+                    <hr>
+                    <form id="formNovaApelacao">
+                        <label for="tipo_apelacao">Tipo de Apelação:</label>
+                        <select id="tipo_apelacao" name="tipo_apelacao" required>
+                            <option value="reembolso">Reembolso</option>
+                            <option value="troca">Troca</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <br>
+                        <label for="anexo">Anexar Documento:</label>
+                        <input type="file" id="anexo" name="anexo">
+                        <br>
+                        <label for="descricao">Descrição da Apelação:</label>
+                        <br>
+                        <textarea id="descricao" name="descricao" rows="6" required></textarea>
+                        <br>
+                        <button id="salvarconfiguracoes" type="submit">Enviar Apelação</button>
+                    </form>
+                
+                    <h3>Filtrar Apelações</h3>
+                    <select id="filtroApelacoes" onchange="filtrarApelacoes()">
+                        <option value="todas">Todas</option>
+                        <option value="pendentes">Pendentes</option>
+                        <option value="aprovadas">Aprovadas</option>
+                        <option value="rejeitadas">Rejeitadas</option>
+                    </select>
                 </div>
             </div>
 
             <div id="configuracoesModal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('configuracoesModal')">&times;</span>
-                    <h2>Configurações</h2>
-                    <p>Configurações da sua conta.</p>
+                    <h2>Preferências e Configurações</h2>
+                    <form>
+                        <h4>Preferências:</h4>
+                        <label class="trocarModo">Modo Claro
+                            <input type="checkbox" id="modoClaro" onchange=""> <!--Script no onchange.-->
+                            <span class="placeholder"></span>
+                        </label>
+                        <h4>Configurações:</h4>
+                        <hr>
+                        <p>Dados da Conta</p>
+                        <label for="nome_usuario">Nome de Usuário:</label>
+                        <input type="text" id="nome_usuario" name="nome_usuario" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <br>
+                        <hr>
+                        <p>Dados de Pessoa Fisica</p>
+                        <label for="nome_completo">Nome Completo:</label>
+                        <input type="text" id="nome_completo" name="nome_completo" required>
+                        <br>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                        <br>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                        <br>
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                        <br>
+                        <hr>
+                        <button id="salvarconfiguracoes" type="submit">Salvar Configurações</button>
+                    </form>
                 </div>
             </div>
 
@@ -117,6 +199,8 @@
                     <span class="close" onclick="closeModal('suporteModal')">&times;</span>
                     <h2>Suporte / Fale Conosco</h2>
                     <p>Entre em contato com o suporte.</p>
+                    <br>
+                    <a href="../central_de_ajuda/index.html" id="botao-para-supporte">Clique aqui para entrar ir a pagina de suporte.</a>
                 </div>
             </div>
         </div>
