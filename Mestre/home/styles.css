@@ -19,6 +19,18 @@ h2 {
     color: #555;
 }
 
+.textoLogo{
+    font-size: 50px;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+.textoLogo a:visited{
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    
+ }
 .support-button {
     text-align: center;
     margin-top: 20px;
@@ -178,9 +190,7 @@ textarea {
     width: 100px;
     color: transparent;
 }
-.textoLogo{
-    font-size: 8px;
-}
+
 .PedidosConta{
     position: absolute;
     top: 0; 
@@ -273,7 +283,7 @@ font-size: 7px;
     
 }
 
- .caixaSequencia { 
+.caixaSequencia { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +298,11 @@ font-size: 7px;
     color: #333;
     flex-grow: 1;
     font-size: medium;
+    font-family: sans-serif;
+    font-size: 25px;
+    
  }
+ 
  .caixadev { 
     display: flex;
     justify-content: center;

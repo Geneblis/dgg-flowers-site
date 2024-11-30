@@ -26,8 +26,9 @@ body {
     color: transparent;
 }
 .textoLogo{
-    font-size: 20px;
+    font-size: 50px;
     font-family: "Audiowide", sans-serif;
+    color: white;
 }
 .PedidosConta{
     position: absolute;
@@ -275,6 +276,7 @@ agora é a parte do story da pagina*/
     width: 400px;
     height: 150px;
     border-radius: 15px;
+    background-size: cover;
 }
 .textosDasCaixas{
     font-size: 12px;
@@ -290,7 +292,7 @@ agora é a parte do story da pagina*/
  
 }
 .imagensDeFlores{
-    max-width: 100%;
+    max-width: 200px;
     height: 130px;
     border-radius: 15px;
     border: 2px solid rgb(171, 171, 171);
@@ -320,13 +322,10 @@ footer{
     margin-bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
     color:#f9f9f9;
-    height: 100px;
+    height: 40px;
 }
 
 
-.vermelho{
-    background-color: red;
-}
 /*KKKKK*/
 
 .KKK{
@@ -335,5 +334,7 @@ footer{
 }
 
 .KK{
-    font-size: 12px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }

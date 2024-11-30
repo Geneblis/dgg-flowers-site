@@ -33,6 +33,9 @@ body {
   margin-top: 0;
   text-decoration:none;
 }
+a{
+  text-decoration: none;
+}
 
 .main {
   flex: 1; 

@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.textoLogo{
+  font-size: 50px;
+  font-family: "Audiowide", sans-serif;
+}
 
 button {
   background-color: #4CAF50;
