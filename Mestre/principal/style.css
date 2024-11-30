@@ -27,6 +27,7 @@ body {
 }
 .textoLogo{
     font-size: 20px;
+    font-family: "Audiowide", sans-serif;
 }
 .PedidosConta{
     position: absolute;
@@ -80,7 +81,7 @@ body {
     color: #333;
     flex-grow: 1;
     font-size: medium;
-    font-family: "Playfair Display", serif;
+    font-family: sans-serif;
     font-size: 25px;
  }
  .caixaNova{
@@ -129,9 +130,12 @@ agora é a parte do story da pagina*/
     position: relative;
     height: 100px;
     box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.3);
-    background-color: #535353;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
+    background-image: url(../home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
+    background-attachment: fixed;
+    border: 3px solid black;
     
 }
 
@@ -147,18 +151,31 @@ agora é a parte do story da pagina*/
     border-radius: 90px;
     margin: 5px;
     margin-left: 15px; 
+    
        
+}
+.bolas img{
+    width:80px ;
+    height: 80px ;
+    background-size: cover;
+    border-radius: 90px;
 }
 .button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(221, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.421);
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
-    
+    backdrop-filter: blur(4px);
+    height: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 30px;
 }
 
 
@@ -190,22 +207,29 @@ agora é a parte do story da pagina*/
 /* agora o main*/
 
 .main-content {
-    background-color: #ffffff;
+    background-image: url(../home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
     padding: 20px;
     justify-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    z-index: 1;
+    
     
 }
+
 .caixa {
     border: 3px solid #cccccc62;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
-    background-color: #ffffff;
+    background-color: #ffffff3f;
     width: 200px;
     height:200px ;
     flex-grow: 1;
     justify-content: center;
+    backdrop-filter: blur(4px);
+    z-index: 2;
     
 }
 .grid-container {
@@ -230,6 +254,8 @@ agora é a parte do story da pagina*/
     justify-content: center;
     flex-basis: 200;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    background-color: #ffffff3f;
     
 }
 .fotoDestaque {
@@ -237,7 +263,7 @@ agora é a parte do story da pagina*/
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
-    background-color: #ffffff;
+    background-color: #ffffff3f;
     width: 400px;
     height:150px ;
     flex-grow: 1;
@@ -294,6 +320,7 @@ footer{
     margin-bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
     color:#f9f9f9;
+    height: 100px;
 }
 
 
