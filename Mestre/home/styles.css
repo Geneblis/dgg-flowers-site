@@ -420,3 +420,38 @@ footer{
     border-color: #3e8e41; /* Cor da borda ao focar */
     outline: none; /* Remove o contorno padrão */
 }
+
+/*as parada q fica em cima do footer, copia e cola no seu css tb*/
+.info-above-footer {
+  background-color: rgb(25, 25, 25); 
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; 
+  bottom: 0;
+  text-align: center;
+  position: relative;
+}
+
+.info-above-footer h2 {
+  margin-bottom: 15px;
+}
+
+.info-above-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-above-footer li {
+   margin-bottom: 10px;
+}
+
+.info-above-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-above-footer a:hover {
+  text-decoration: underline;
+}

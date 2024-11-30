@@ -164,6 +164,7 @@ button i {
   cursor: pointer;
 }
 
+/*as parada q fica em cima do footer, copia e cola no seu css tb*/
 .info-above-footer {
   background-color: rgb(25, 25, 25); 
   font-size: 12px;
