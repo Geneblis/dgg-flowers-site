@@ -1,2 +1,0 @@
-#Beto usa essa arquitetura pra tu poder fzr o site em ingles, tu vai precisar que os scripts e os CSS estejam na hierarquia corretamente, tu n pode
-#só criar uma pasta dentro da Mestre com os msm caminhos e esperar que funcione. Faz assim que demora menos e é sucesso.
