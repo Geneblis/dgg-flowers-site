@@ -7,10 +7,6 @@
         <title>Minha conta</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Borel&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-            
-            <!--modo noturno e scripts-->
-        <script src="../modo_noturno/modo_noturno.js" defer></script>
-        <link rel="stylesheet" href="../modo_noturno/darkmode.css" id="dark-mode-styles" disabled>
     </head>
 
     <body>
@@ -165,6 +161,9 @@
                             <input type="checkbox" id="modoClaro" onchange="toggleDarkMode()"> 
                             <span class="placeholder"></span>
                         </label>
+                        <label class="trocarIdioma">Trocar o Idioma
+                            <input type="checkbox" id="translateCheckbox">
+                        </label>
                         <h4>Configurações:</h4>
                         <hr>
                         <p>Dados da Conta</p>
@@ -236,6 +235,9 @@
         <script src="../botoes/botao.js" defer></script>
         <script src="../botoes/botoesFloreSecas.js" defer></script>
         <script src="../botoes/minhaconta_scripts.js" defer></script>
+            <!--modo noturno e scripts-->
+        <script src="../modo_noturno/modo_noturno.js" defer></script>
+        <link rel="stylesheet" href="../modo_noturno/darkmode.css" id="dark-mode-styles" disabled>
     </body>
 
 </html>

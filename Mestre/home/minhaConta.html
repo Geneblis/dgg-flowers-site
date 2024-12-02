@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
     <head>
         <meta charset="UTF-8">
@@ -165,6 +165,9 @@
                             <input type="checkbox" id="modoClaro" onchange="toggleDarkMode()"> 
                             <span class="placeholder"></span>
                         </label>
+                        <label class="trocarIdioma">Trocar o Idioma
+                            <input type="checkbox" id="translateCheckbox">
+                        </label>
                         <h4>Configurações:</h4>
                         <hr>
                         <p>Dados da Conta</p>
@@ -209,7 +212,7 @@
         </div>
 
         <footer>
-            <div class="info-above-footer">
+            <div class="info-above-footer" class="translatable">
                 <h2>Informações</h2>
                 <ul>
                     <li><strong>Endereço:</strong> Rua das Flores, 456 - Camaragibe, PE.</li>
@@ -236,6 +239,7 @@
         <script src="../botoes/botao.js" defer></script>
         <script src="../botoes/botoesFloreSecas.js" defer></script>
         <script src="../botoes/minhaconta_scripts.js" defer></script>
+        <script src="../modo_noturno/translate.js" defer></script>
     </body>
 
 </html>
