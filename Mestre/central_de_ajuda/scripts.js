@@ -38,3 +38,44 @@ function sendMessage() {
         messagesDiv.scrollTop = messagesDiv.scrollHeight; // Rola para a última mensagem
     }
 };
+
+
+function sendPredefinedQuestion(question) {
+    displayMessage(question, 'user');
+    handleChatbotResponse(question);
+}
+
+function displayMessage(message, sender) {
+    const messagesDiv = document.getElementById('messages');
+    const newMessage = document.createElement('div');
+    newMessage.textContent = message;
+    newMessage.className = sender; // Adiciona classe para estilização
+    messagesDiv.appendChild(newMessage);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight; // Rola para a última mensagem
+}
+
+function handleChatbotResponse(message) {
+    const predefinedQuestions = [
+        'Qual é o horário de atendimento?',
+        'Como posso entrar em contato?',
+        'Quais serviços vocês oferecem?'
+    ];
+
+    if (predefinedQuestions.includes(message)) {
+        // Resposta do chatbot para perguntas pré-definidas
+        const response = getChatbotResponse(message);
+        displayMessage(response, 'chatbot');
+    } else {
+        // Resposta para mensagens não reconhecidas
+        displayMessage("Desculpe, o chat está lento. Por favor, volte mais tarde.", 'chatbot');
+    }
+}
+
+function getChatbotResponse(question) {
+    const responses = {
+        'Qual é o horário de atendimento?': 'Nosso horário de atendimento é das 9h às 18h.',
+        'Como posso entrar em contato?': 'Você pode entrar em contato pelo telefone (xx) xxxx-xxxx.',
+        'Quais serviços vocês oferecem?': 'Oferecemos uma variedade de serviços, incluindo consultoria e suporte técnico.'
+    };
+    return responses[question] || "Desculpe, não entendi sua pergunta.";
+}

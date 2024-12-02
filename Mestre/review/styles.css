@@ -22,6 +22,7 @@ button {
   border-radius: 5px;
 }
 
+
 button i {
   margin-right: 8px;
 }
@@ -320,20 +321,26 @@ footer{
     margin-top: 10px;   
 }
 .caixaSequencia { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin: 2px;
-    background-color: #f9f9f9;
-    width: 90px;
-    height: 30px;
-    text-align: center;
-    border-radius: 15px;
-    color: #333;
-    flex-grow: 1;
-    font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 2px;
+  background-color: #f9f9f9;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  color: #333;
+  flex-grow: 1;
+  font-size: medium;
+  font-family: sans-serif;
+  font-size: 25px;
+  
+}
+a{
+  text-decoration: none;
 }
 .caixadev { 
     display: flex;
@@ -434,4 +441,66 @@ h1 {
 #cvv{
   height: 10%;
   width: 5%;
+}
+#chat-container {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.user {
+  text-align: right;
+  color: blue;
+}
+
+.chatbot {
+  text-align: left;
+  color: green;
+  display: flex;
+  flex-direction: column;
+}
+#question-buttons{
+  margin-bottom: 0;
+
+}
+button {
+  padding: 5px 10px; /* Espaçamento interno dos botões */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+#question-buttons {
+  display: flex; /* Alinha os botões em linha */
+  gap: 5px; /* Espaçamento entre os botões */
+  margin-top: auto; /* Faz com que os botões fiquem colados na parte inferior */
+}
+#chat {
+  max-width: 400px; /* Largura máxima do chat */
+  border: 1px solid #ccc; /* Borda do chat */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo do chat */
+}
+#chat-box {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+}
+#messages {
+  flex: 1; /* Faz com que a área de mensagens ocupe o espaço disponível */
+  height: 300px; /* Altura fixa para a área de mensagens */
+  overflow-y: auto; /* Permite rolagem vertical */
+  border: 1px solid #ddd; /* Borda da área de mensagens */
+  margin-bottom: 10px; /* Espaçamento abaixo da área de mensagens */
+  padding: 5px; /* Espaçamento interno da área de mensagens */
+}
+#chat-input {
+  margin-bottom: 10px; /* Espaçamento abaixo do campo de entrada */
+  padding: 5px; /* Espaçamento interno do campo de entrada */
+  width: calc(100% - 12px); /* Largura do campo de entrada */
 }

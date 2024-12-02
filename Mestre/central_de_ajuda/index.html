@@ -71,6 +71,11 @@
             <div id="chat">
                 <div id="chat-box">
                     <div id="messages"></div>
+                    <div id="question-buttons">
+                        <button onclick="sendPredefinedQuestion('Qual é o horário de atendimento?')">Qual é o horário de atendimento?</button>
+                        <button onclick="sendPredefinedQuestion('Como posso entrar em contato?')">Como posso entrar em contato?</button>
+                        <button onclick="sendPredefinedQuestion('Quais serviços vocês oferecem?')">Quais serviços vocês oferecem?</button>
+                    </div>
                 </div>
                 <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
                 <button onclick="sendMessage()">Enviar</button>

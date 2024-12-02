@@ -31,8 +31,12 @@ h2 {
 }
 a{
     text-decoration: none;
-    
- }
+    color: purple;
+}
+a:visited{
+    text-decoration: none;
+    color: purple;
+}
 .support-button {
     text-align: center;
     margin-top: 20px;
