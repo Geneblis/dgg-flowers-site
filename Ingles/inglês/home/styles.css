@@ -1,0 +1,457 @@
+.minha-conta-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #555;
+}
+
+.textoLogo{
+    font-size: 50px;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+.textoLogo a:visited{
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    
+ }
+.support-button {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height : 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#salvarconfiguracoes{
+    opacity: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#botao-para-supporte {
+    opacity: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none; 
+    border-radius: 5px;
+    position: relative;
+    width: 85%;
+    height: 100%;
+}
+#botao-para-supporte:hover {
+    background-color: #45a049;
+}
+
+.apelacoes-container {
+    max-height: 200px;
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+
+#listaApelacoes {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#listaApelacoes li {
+    padding: 5px 0; 
+    border-bottom: 1px solid #eee;
+}
+
+#listaApelacoes li:last-child {
+    border-bottom: none; 
+}
+
+textarea {
+    resize: none;
+}
+
+#descricao{
+    width: 50%;
+}
+
+.header {
+    background-color: #038C8C;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+   
+}
+.sombra{
+    box-shadow:0px 0px 30px #000000;
+}
+.main-content {
+    background-color: #b4a8cb;
+    padding: 20px;
+    justify-items: center;
+}
+.principal{
+    background-color: #ffffff;
+    height: 1200px;
+    box-shadow:0px 0px 15px #000000;
+    margin-top: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px; 
+    place-items: center;
+    
+}
+.logo{
+    width: 130px;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    background-color: #00b4b4;
+}
+.logoiv{
+    width: 100px;
+    color: transparent;
+}
+
+.PedidosConta{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+.grid-containerP {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+}
+.grid-containerL {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+    right: 0;
+}
+.caixaP {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px ;
+    background-color: #f9f9f9;
+    width: 70px;
+    height:10px ;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+font-size: 7px;
+    
+}
+.caixaL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 7px;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+}
+.loginCaixa{
+    
+    position: absolute;
+    top: 5px; 
+    left: 140px; 
+    padding: 5px; 
+    display: flex; 
+    
+    align-items: flex-end;
+    color: #333;
+}
+.caixaNova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 172px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.carrinho{
+    font-size: 15px;
+    position: absolute;
+    top: 30px; 
+    right: 15px; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+ .sequenciaCaixas { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.caixaSequencia { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    flex-grow: 1;
+    font-size: medium;
+    font-family: sans-serif;
+    font-size: 25px;
+    
+ }
+ 
+ .caixadev { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    background-color: #a8cbc5;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+   font-size: medium;
+   position: absolute;
+   left: 104px;
+   font-size: 13px;
+ }
+ button {
+    opacity: 0; /* O botão será invisível, mas ainda ocupará espaço e será clicável */
+    margin: 0; /* Remove margens, se houver */
+    position: absolute;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: 'Georgia', serif; /* Fonte serifada para um visual mais formal */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem acima e abaixo do título */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    border-bottom: 2px solid #ccc; /* Linha inferior para destaque */
+    padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
+}
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;
+    color:#f9f9f9;
+    margin-bottom: 0;
+}
+
+.imagensDeFlores{
+    max-width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+}
+.caixa {
+    
+    border-radius: 15px;
+    
+    margin: 10px;
+    width: 200px;
+    height:fit-content ;
+    
+    background-color: #ffffff;
+}
+.caixa h3{
+    justify-content: center;
+}
+.tituloFlores{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-size: 15px;
+    
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+.content {
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível, empurrando o footer para o fundo */
+    padding: 20px;
+}
+
+footer{
+    background-color: #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position:static; /* Posiciona o rodapé */
+    margin-bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color:#f9f9f9;
+}
+.entradasFeias{
+    height: 10px;
+    padding: 2px;
+    border: 2px solid #797979; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 200px; /* Largura total */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: border-color 0.3s; /* Transição suave */
+}
+.entradasFeias:focus {
+    border-color: #3e8e41; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/*as parada q fica em cima do footer, copia e cola no seu css tb*/
+.info-above-footer {
+  background-color: rgb(25, 25, 25); 
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; 
+  bottom: 0;
+  text-align: center;
+  position: relative;
+}
+
+.info-above-footer h2 {
+  margin-bottom: 15px;
+}
+
+.info-above-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-above-footer li {
+   margin-bottom: 10px;
+}
+
+.info-above-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-above-footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,506 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.textoLogo{
+  font-size: 50px;
+  font-family: "Audiowide", sans-serif;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+
+button i {
+  margin-right: 8px;
+}
+
+#verFAQButao {
+  background-color: #038C8C;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.produto {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.florimagem {
+  width: 200px;
+  height: 200px;
+}
+.produtodetalhes {
+  flex: 1;
+  padding-left: 20px;
+}
+.produto-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.produto-preco {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.produto-estrelas {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+.produto-descricao-about {
+  color: rgb(71, 71, 71);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.produto-descricao {
+  margin-bottom: 10px;
+}
+.produto-faq-about {
+  color: rgb(71, 71, 71);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.produto-faq {
+  color: rgb(44, 44, 44);
+  display: none;
+  font-size: 15px;
+}
+.comprar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+.reviews-group {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.reviews-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.review {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.review-autor {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.review-text {
+  margin-bottom: 5px;
+}
+.review-nota {
+  color: gold;
+}
+
+/* Estilos do Modal de pagamento */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content-cartao{
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #000000;
+  width: 70%;
+}
+
+.fechar_pagamento {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fechar_pagamento:hover
+.fechar_pagamento:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*as parada q fica em cima do footer, copia e cola no seu css tb*/
+.info-above-footer {
+  background-color: rgb(25, 25, 25); 
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; 
+  bottom: 0;
+  text-align: center;
+  position: relative;
+}
+
+.info-above-footer h2 {
+  margin-bottom: 15px;
+}
+
+.info-above-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-above-footer li {
+   margin-bottom: 10px;
+}
+
+.info-above-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-above-footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;
+    color:#f9f9f9;
+    margin-bottom: 0;
+}
+
+
+/*css da home abaixo. Precisou de umas correções manuais e ainda precisa de mais algumas.*/
+.header {
+    background-color: #038C8C;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+   
+}
+.main-content {
+    background-color: #b4a8cb;
+    padding: 20px;
+    justify-items: center;
+}
+
+
+.principal{
+    background-color: #ffffff;
+    height: 800px;
+    box-shadow:0px 0px 15px #000000;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px; 
+    place-items: center;
+    
+}
+.logo{
+  width: 130px;
+  position: absolute;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+  background-color: #00b4b4;
+}
+.logoiv{
+  width: 100px;
+  color: transparent;
+}
+.textoLogo{
+    font-size: 8px;
+}
+.PedidosConta{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+    font-size: 8px;
+}
+.grid-containerP {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 100px);
+    gap: 1px; /* Espaçamento entre as caixas */
+}
+.caixaP {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px ;
+    background-color: #f9f9f9;
+    width: 70px;
+    height: 10px;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+    
+}
+.caixaNova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    background-color: #f9f9f9;
+    width: 172px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.carrinho{
+    font-size: 15px;
+    position: absolute;
+    top: 30px; 
+    right: 15px; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333;
+}
+.sequenciaCaixas { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;   
+}
+.caixaSequencia { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 2px;
+  background-color: #f9f9f9;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  color: #333;
+  flex-grow: 1;
+  font-size: medium;
+  font-family: sans-serif;
+  font-size: 25px;
+  
+}
+a{
+  text-decoration: none;
+}
+.caixadev { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    background-color: #a8cbc5;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    font-size: medium;
+    position: absolute;
+    left: 104px;
+    font-size: 13px;
+ }
+h1 {
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: 'Georgia', serif; /* Fonte serifada para um visual mais formal */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem acima e abaixo do título */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    border-bottom: 2px solid #ccc; /* Linha inferior para destaque */
+    padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
+}
+
+.imagensDeFlores{
+    max-width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+}
+.caixa {
+    border-radius: 15px;
+    margin: 10px;
+    width: 200px;
+    height:fit-content ;
+    background-color: #ffffff;
+}
+.caixa h3{
+    justify-content: center;
+}
+.tituloFlores{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-size: 15px;
+}
+.buttonF { 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.styleButton { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 2px;
+  background-color: #f9f9f9;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  color: #333;
+  flex-grow: 1;
+  font-size: medium;
+}
+.logo{
+  width: 130px;
+  position: absolute;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+  background-color: #00b4b4;
+}
+.logoiv{
+  width: 100px;
+  color: transparent;
+}
+.textoLogo{
+  font-size: 20px;
+}
+
+/*cartão ee outros, finalizacao de pagamento sla*/
+#cartao_num{
+  height: 10%;
+  width: 25%;
+}
+#cvv{
+  height: 10%;
+  width: 5%;
+}
+#chat-container {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.user {
+  text-align: right;
+  color: blue;
+}
+
+.chatbot {
+  text-align: left;
+  color: green;
+  display: flex;
+  flex-direction: column;
+}
+#question-buttons{
+  margin-bottom: 0;
+
+}
+button {
+  padding: 5px 10px; /* Espaçamento interno dos botões */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+#question-buttons {
+  display: flex; /* Alinha os botões em linha */
+  gap: 5px; /* Espaçamento entre os botões */
+  margin-top: auto; /* Faz com que os botões fiquem colados na parte inferior */
+}
+#chat {
+  max-width: 400px; /* Largura máxima do chat */
+  border: 1px solid #ccc; /* Borda do chat */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo do chat */
+}
+#chat-box {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+}
+#messages {
+  flex: 1; /* Faz com que a área de mensagens ocupe o espaço disponível */
+  height: 300px; /* Altura fixa para a área de mensagens */
+  overflow-y: auto; /* Permite rolagem vertical */
+  border: 1px solid #ddd; /* Borda da área de mensagens */
+  margin-bottom: 10px; /* Espaçamento abaixo da área de mensagens */
+  padding: 5px; /* Espaçamento interno da área de mensagens */
+}
+#chat-input {
+  margin-bottom: 10px; /* Espaçamento abaixo do campo de entrada */
+  padding: 5px; /* Espaçamento interno do campo de entrada */
+  width: calc(100% - 12px); /* Largura do campo de entrada */
+}
