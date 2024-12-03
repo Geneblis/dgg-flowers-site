@@ -1,4 +1,3 @@
-// Variável para controlar o idioma
 let isPortuguese = true; 
 
 // Modo noturno
@@ -48,62 +47,68 @@ function toggleLanguage() {
     alert("Traduzindo...")
 }
 
-// Adiciona um listener para o checkbox de tradução
-document.getElementById('translateCheckbox').addEventListener('change', translatePage);
+// Adiciona um listener para o toggle de idioma
+document.querySelector('.language-toggle').addEventListener('click', toggleLanguage);
 
 async function translatePage(language) {
     const elementsToTranslate = document.body.querySelectorAll('h1, h2, p, a, li');
     const textsToTranslate = Array.from(elementsToTranslate).map(el => el.innerText.trim()).filter(text => text);
-
+    
     const sourceLang = language === 'pt' ? 'pt' : 'en';
     const targetLang = language === 'pt' ? 'en' : 'pt';
 
     console.log(`Traduzindo de ${sourceLang} para ${targetLang}`);
 
-    try {
-        const translatedTexts = await translateText(textsToTranslate.join('\n'), sourceLang, targetLang);
-        const translatedArray = translatedTexts.split('\n');
+    // Array para armazenar os textos traduzidos
+    const translatedTexts = [];
 
-        translatedArray.forEach((translatedText, index) => {
-            if (index < elementsToTranslate.length) {
-                elementsToTranslate[index].innerText = translatedText;
+    for (const text of textsToTranslate) {
+        // Divide o texto em partes de até 500 caracteres
+        const chunks = text.match(/.{1,500}/g) || []; // Divide o texto em pedaços de até 500 caracteres
+
+        for (const chunk of chunks) {
+            let translatedChunk;
+
+            // Tenta traduzir com tratamento de erro
+            while (true) {
+                try {
+                    translatedChunk = await translateText(chunk, sourceLang, targetLang);
+                    break; // Sai do loop se a tradução for bem-sucedida
+                } catch (error) {
+                    if (error.message.includes('429')) {
+                        console.warn('Limite de solicitações atingido. Aguardando 5 segundos...');
+                        await new Promise(resolve => setTimeout(resolve, 5000)); // Aguarda 5 segundos
+                    } else {
+                        throw error; // Lança o erro se não for 429
+                    }
+                }
             }
-        });
-    } catch (error) {
-        console.error('Erro ao traduzir:', error);
+            translatedTexts.push(translatedChunk);
+        }
     }
+
+    // Atualiza os elementos com os textos traduzidos
+    translatedTexts.forEach((translatedText, index) => {
+        if (index < elementsToTranslate.length) {
+            elementsToTranslate[index].innerText = translatedText;
+        }
+    });
 }
 
 async function translateText(text, sourceLang, targetLang) {
-    // Dividir o texto em partes menores para evitar problemas de tamanho
-    const chunkSize = 200; // Tamanho máximo da parte
-    const textChunks = [];
+    const response = await fetch(`https://cors-anywhere.herokuapp.com/https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`);
 
-    for (let i = 0; i < text.length; i += chunkSize) {
-        textChunks.push(text.substring(i, i + chunkSize));
+    if (!response.ok) {
+        throw new Error(`Erro na tradução: ${response.status}`);
     }
 
-    const translatedChunks = [];
+    const data = await response.json();
+    console.log('Resposta da API:', data); // Log da resposta da API
 
-    for (const chunk of textChunks) {
-        console.log(`Traduzindo: "${chunk}"`); // Log do texto que está sendo traduzido
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}&langpair=${sourceLang}|${targetLang}`);
-
-        if (!response.ok) {
-            throw new Error(`Erro na tradução: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log('Resposta da API:', data); // Log da resposta da API
-
-        // Verifica se há tradução disponível
-        if (data.responseData && data.responseData.translatedText) {
-            translatedChunks.push(data.responseData.translatedText);
-        } else {
-            translatedChunks.push(chunk); // // Se não houver tradução, mantém o texto original
-            translatedChunks.push(chunk);
-        }
+    // Verifica se há tradução disponível
+    if (data.responseData && data.responseData.translatedText) {
+        return data.responseData.translatedText; // Retorna o texto traduzido
+    } else {
+        return text; // Se não houver tradução, mantém o texto original
     }
-
-    return translatedChunks.join('\n'); // Retorna o texto traduzido
 }
