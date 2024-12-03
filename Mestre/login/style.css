@@ -59,7 +59,7 @@ body { font-family: Arial, sans-serif;
         text-align: left; 
         outline: none; 
     }
-    #cadastro{
+    #cadastro2{
         text-decoration: none;
         font-size: 28px;
     }
@@ -100,4 +100,30 @@ body { font-family: Arial, sans-serif;
     button:focus {
         outline: none; 
         box-shadow: 0 0 0 4px rgba(69, 57, 184, 0.5); 
+    }
+     .logo2{
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; 
+        height: 20vh; 
+        margin: 0;
+    }
+    .logo {
+        max-width: 100%;
+        height: auto; 
+    }
+    .logo4{
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; 
+        height: 20vh; 
+        margin: 0;
+    }
+    .logo6 {
+        max-width: 100%;
+        height: auto; 
+    }
+    #cadastro{
+        color: #ffffff;
+        text-decoration: none;
     }
