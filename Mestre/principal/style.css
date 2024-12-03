@@ -329,6 +329,40 @@ footer{
     color:#f9f9f9;
     height: 40px;
 }
+/*as parada q fica em cima do footer, copia e cola no seu css tb*/
+.info-above-footer {
+  background-color: rgb(25, 25, 25); 
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; 
+  bottom: 0;
+  text-align: center;
+  position: relative;
+}
+
+.info-above-footer h2 {
+  margin-bottom: 15px;
+}
+
+.info-above-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-above-footer li {
+   margin-bottom: 10px;
+}
+
+.info-above-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-above-footer a:hover {
+  text-decoration: underline;
+}
 
 
 /*KKKKK*/
@@ -342,4 +376,33 @@ footer{
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+}
+
+/*barra de busca*/
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#searchButton:hover {
+    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
 }

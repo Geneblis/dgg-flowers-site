@@ -18,6 +18,11 @@ window.onclick = function(event) {
     }
 }
 
+//o script q volta pra home ao clica no icone
+document.querySelector('.logo2').addEventListener('click', function() {
+    window.location.href = '../principal/idex.html';
+});
+
 //nao sei oq faz lol
 function filtrarApelacoes() {
     const filtro = document.getElementById('filtroApelacoes').value;
