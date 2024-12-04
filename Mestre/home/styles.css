@@ -231,6 +231,15 @@ textarea {
     align-items: flex-end;
     color: #333;
 }
+.item-historico{
+    width: 200px;
+    height: 200px;
+}
+.item-historico img{
+    max-width: 200px;
+    height: 100px;
+}
+
 .grid-containerP {
     display: grid; /* Ativa o Grid */
     grid-template-columns: repeat(2, 100px);

@@ -24,22 +24,21 @@ totalSpan.innerHTML = total.toFixed(2)
     alert(`${nome} adicionado ao carrinho`);
 }
 
+function adicionaraoHistorico(){
+  let historico = JSON.parse(localStorage.getItem('carrinho')) || [];
+  localStorage.setItem('historico', JSON.stringify(historico));
+};
 
 function removerDoCarrinho(index){
   let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
   carrinho.splice(index, 1);
-
   localStorage.setItem('carrinho', JSON.stringify(carrinho))
-
   atualizarCarrinho();
-
 }
-atualizarCarrinho();
 
 function removerTudo() {
-  
+  adicionaraoHistorico();
   localStorage.setItem('carrinho', JSON.stringify([]));
-
   atualizarCarrinho();
 }

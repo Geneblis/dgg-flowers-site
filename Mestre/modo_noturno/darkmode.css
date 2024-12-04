@@ -322,3 +322,28 @@ footer {
     box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
     background-color: #005c5c;
 }
+
+.produto-descricao-about {
+  color: rgb(201, 201, 201);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.produto-descricao {
+  margin-bottom: 10px;
+}
+.produto-faq-about {
+  color: rgb(173, 173, 173);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.produto-faq {
+  color: rgb(185, 185, 185);
+  display: none;
+  font-size: 15px;
+}
+.produto-estrelas {
+  color: rgb(177, 177, 177);
+  font-size: 16px;
+}
