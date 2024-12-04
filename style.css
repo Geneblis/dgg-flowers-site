@@ -134,7 +134,7 @@ agora é a parte do story da pagina*/
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    background-image: url(../home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
+    background-image: url(./home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
     background-attachment: fixed;
     border: 3px solid black;
     
@@ -208,7 +208,7 @@ agora é a parte do story da pagina*/
 /* agora o main*/
 
 .main-content {
-    background-image: url(../home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
+    background-image: url(./home/imagens/5246391-paisagem-natureza-fundo-de-bonito-cosmos-flor-campo-gratis-foto.jpg);
     padding: 20px;
     justify-items: center;
     background-repeat: no-repeat; 
