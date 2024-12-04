@@ -253,6 +253,7 @@ agora é a parte do story da pagina*/
     height:50px ;
     flex-grow: 1;
     justify-content: center;
+    justify-items: center;
     flex-basis: 200;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
