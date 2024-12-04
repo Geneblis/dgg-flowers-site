@@ -24,6 +24,11 @@ body { font-family: Arial, sans-serif;
     align-items: center; 
     background-color: #ffffff; 
 }
+.textoLogo{
+    font-size: 50px;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
     .grid-container {
     display: flex;
     flex-direction: column; 

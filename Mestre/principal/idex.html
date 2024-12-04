@@ -36,20 +36,21 @@
                     <img class="logoiv" src="imagens/logo.png"
                     alt="logo com 3 flores">
                 <h1 class="textoLogo">DGG flowers</h1>
+                <div id="google_translate_element">
+                    <script type="text/javascript"> 
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement(
+                                {pageLanguage: 'pt'},
+                                'google_translate_element'
+                            );
+                        }
+                    </script> 
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+                    <i id="languageIcon" class="fas fa-language"></i>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                </div>
             </div>
-            <div id="google_translate_element">
-                <script type="text/javascript"> 
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            {pageLanguage: 'pt'},
-                            'google_translate_element'
-                        );
-                    }
-                </script> 
-                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-                <i id="languageIcon" class="fas fa-language"></i>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            </div>
+           
             <div class="PedidosConta">
                 <div class="grid-containerP">
                     <div class="caixaP">
@@ -57,8 +58,11 @@
                     </div>
                     <div class="caixaP">
                         <h2 class="txtbut"><a href="../home/minhaConta.html">minha conta</a></h2>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Buscar flores...">
@@ -69,6 +73,10 @@
                 <div class="caixaNova">
             <h2><a href="../carrinho/carrinho.html">&#x1F6D2 Carrinho</a> </h2>
                 </div>
+                <label class="trocarModo texto-do-modal-alternativo">Modo Escuro
+                    <input type="checkbox" id="modoClaro" onchange="toggleDarkMode()"> 
+                    <span class="placeholder"></span>
+                </label>
                 
             </div>
 

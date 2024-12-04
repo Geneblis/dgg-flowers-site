@@ -304,6 +304,65 @@ font-size: 7px;
     text-align: center;
     border-radius: 15px;
 }
+/* Estilos do contêiner do botão */
+.trocarModo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    user-select: none;
+}
+
+/* Estilos do texto "Modo Escuro" */
+.trocarModo span {
+    margin-left: 10px;
+}
+
+/* Estilo do checkbox (input) invisível */
+#modoClaro {
+    display: none;
+}
+
+/* Estilo do botão (caixa que aparece como alternância) */
+.trocarModo .placeholder {
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #ccc;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do círculo dentro do botão (indicador do modo claro ou escuro) */
+.trocarModo .placeholder::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+}
+
+/* Estilo para quando o modo escuro está ativado (checkbox marcado) */
+#modoClaro:checked + .placeholder {
+    background-color: #333;
+}
+
+/* Estilo do círculo quando o modo escuro está ativado */
+#modoClaro:checked + .placeholder::before {
+    left: 27px; /* Move o círculo para a direita */
+}
+
+/* Estilo do texto quando o modo escuro está ativado */
+#modoClaro:checked ~ .trocarModo span {
+    color: #fff;
+}
+
 .carrinho{
     font-size: 15px;
     position: absolute;
