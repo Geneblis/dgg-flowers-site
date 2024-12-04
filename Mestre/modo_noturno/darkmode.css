@@ -304,3 +304,21 @@ footer {
     display: flex;
     font-size: 15px;    
 }
+.main-content {
+    background-image: url(../home/imagens/flor\ de\ noite.jpg);
+    padding: 20px;
+    justify-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    z-index: 1;
+    
+    
+}
+.logo{
+    width: 130px;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.3);
+    background-color: #005c5c;
+}

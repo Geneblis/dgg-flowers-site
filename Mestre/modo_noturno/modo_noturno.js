@@ -30,6 +30,8 @@ function applyDarkMode() {
 window.onload = applyDarkMode;
 
 
+
+
 //não mais necessario por causa da API do google. 
 //perda de tempo do ^ pra isso não ser usado.
 //

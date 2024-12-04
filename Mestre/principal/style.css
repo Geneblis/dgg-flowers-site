@@ -329,6 +329,9 @@ footer{
     color:#f9f9f9;
     height: 40px;
 }
+#footerAb{
+    background-color: #000000;
+}
 /*as parada q fica em cima do footer, copia e cola no seu css tb*/
 .info-above-footer {
   background-color: rgb(25, 25, 25); 
