@@ -38,3 +38,19 @@ function filtrarApelacoes() {
     });
 }
 
+function SalvarHistorico(){
+  const historicodiv = document.getElementById('historico');
+  let historico = JSON.parse(localStorage.getItem('historico')) || [];
+  historicodiv.innerHTML = '';
+  historico.forEach((item, index) => {
+    historicodiv.innerHTML += `
+        <div class="item-historico">
+            <img src="${item.imagem}" alt="${item.nome}">
+            <p>${item.nome} - R$ ${item.preco.toFixed(2)}</p>
+            <hr>
+        </div>
+    `;
+});
+    alert(`${nome} adicionado ao historico`);
+}
+SalvarHistorico();

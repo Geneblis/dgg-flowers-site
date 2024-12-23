@@ -36,20 +36,21 @@
                     <img class="logoiv" src="imagens/logo.png"
                     alt="logo com 3 flores">
                 <h1 class="textoLogo">DGG flowers</h1>
+                <div id="google_translate_element">
+                    <script type="text/javascript"> 
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement(
+                                {pageLanguage: 'pt'},
+                                'google_translate_element'
+                            );
+                        }
+                    </script> 
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+                    <i id="languageIcon" class="fas fa-language"></i>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                </div>
             </div>
-            <div id="google_translate_element">
-                <script type="text/javascript"> 
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            {pageLanguage: 'pt'},
-                            'google_translate_element'
-                        );
-                    }
-                </script> 
-                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-                <i id="languageIcon" class="fas fa-language"></i>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            </div>
+           
             <div class="PedidosConta">
                 <div class="grid-containerP">
                     <div class="caixaP">
@@ -57,8 +58,11 @@
                     </div>
                     <div class="caixaP">
                         <h2 class="txtbut"><a href="../home/minhaConta.html">minha conta</a></h2>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Buscar flores...">
@@ -69,24 +73,28 @@
                 <div class="caixaNova">
             <h2><a href="../carrinho/carrinho.html">&#x1F6D2 Carrinho</a> </h2>
                 </div>
+                <label class="trocarModo texto-do-modal-alternativo">Modo Escuro
+                    <input type="checkbox" id="modoClaro" onchange="toggleDarkMode()"> 
+                    <span class="placeholder"></span>
+                </label>
                 
             </div>
 
             <div class="sequenciaCaixas">
                 <div class="caixaSequencia">
-                    <a href="../home/floreSecas.html">flores secas</a>
+                    <a href="../home/floreSecas.html">FLORES SECAS</a>
                 </div>
                 <div class="caixaSequencia">
-                    <a href="../home/floresFrescas.html">flores frescas</a>
+                    <a href="../home/floresFrescas.html">FLORES FRESCAS</a>
                 </div>
                 <div class="caixaSequencia">
-                    <a href="../home/floresAromaticas.html">flores aromaticas</a>
+                    <a href="../home/floresAromaticas.html">FLORES AROMÁTICAS</a>
                 </div>
                 <div class="caixaSequencia">
-                    <a href="../home/floresProteas.html">flores protéas</a>
+                    <a href="../home/floresProteas.html">FLORES PROTÉAS</a>
                 </div>
                 <div class="caixaSequencia">
-                    <a href="../home/vasosFlores.html">vasos para flores</a>
+                    <a href="../home/vasosFlores.html">VASOS PARA FLORES</a>
                 </div>
             </div>
         </div>
@@ -200,7 +208,7 @@
                 <div class="caixa">
 
                     <img class="imagensDeFlores" src="../home/imagens/flor abacaxi.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>Flor de abacaxi do interior de pedra</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/abacaxi_ornamental.html">Flor de abacaxi do interior de pedra</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
@@ -208,7 +216,7 @@
                 <div class="caixa">
 
                     <img class="imagensDeFlores" src="../home/imagens/flor estranha.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor strodd de xique xique bahia</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/emperors_bastion.html">flor strodd de xique xique bahia</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                    
@@ -216,14 +224,14 @@
                 </div>
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/flor feia.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor feia de skinny stick - ceara</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/estrelitzia.html">flor feia de skinny stick - ceara</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/borabill2.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor bill come - ceara</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/__base_template.html">flor bill come - ceara</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
@@ -233,28 +241,28 @@
             <div class="grid-container">
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/flores-de-corte-tropicais-gengibre-sorvetao-ginger.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor de gengibre sorvetao</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/gengibreginger.html">flor de gengibre sorvetao</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/flor vermelha com amarelo.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor vermelha e  amarela</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/anturio.html">flor vermelha e  amarela</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/flor vermelha.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor vermelha parecendo um pinho</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/alpinia.html">flor vermelha parecendo um pinho</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/Heliconia.jpg" alt="">
-                    <h2 class="textosDasCaixas"><a href>flor Heliconia</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/heliconia.html">flor Heliconia</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
@@ -264,28 +272,28 @@
             <div class="grid-container">
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/Hibisco.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>Hibisco</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/hibisco.html">Hibisco</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/jasmine.jpg" alt="">
-                    <h2 class="textosDasCaixas"><a href>jasmine</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/jasmine.html">jasmine</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/Orquídea.webp" alt="">
-                    <h2 class="textosDasCaixas"><a href>orquidea</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/orquidea.html">orquidea</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
 
                 <div class="caixa">
                     <img class="imagensDeFlores" src="../home/imagens/plumeria.jpg" alt="">
-                    <h2 class="textosDasCaixas"><a href>plumeria</a></h2>
+                    <h2 class="textosDasCaixas"><a href="../review/plumaria.html">plumeria</a></h2>
                     <h2 class="preço">R$135,69</h2>
                     <p>6x de R$22,61 sem juros no pix</p>
                 </div>
